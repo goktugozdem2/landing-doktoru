@@ -1,0 +1,11 @@
+name,site,source_url,specific_issue,outreach_angle,status
+Bilişim AŞ,bilisim.com.tr,https://bilisim.com.tr/demo-talep-formu/,Demo formu var; ana teklif ve demo öncesi güven unsurları hızlı audit için uygun,Demo formu dönüşüm sürtünmesi,not_contacted
+JUS,jus.com.tr,https://jus.com.tr/demo,Demo talep akışı var; ilk ekran mesaj netliği ve CTA sürtünmesi incelenebilir,Demo sayfası conversion audit,not_contacted
+TANAS Bilişim,tanas.com.tr,https://www.tanas.com.tr/demo-talebi/,Demo talep sayfası var; B2B yazılım hizmetlerinde teklif netliği kritik,Ajans/yazılım landing audit,not_contacted
+Işıksoft,isiksoft.com.tr,https://www.isiksoft.com.tr/demo-talep,Özel demo CTA’sı var; güven kanıtı ve form alanları audit edilebilir,Demo talep form optimizasyonu,not_contacted
+Noyasis,noyasiscloud.com.tr,http://noyasiscloud.com.tr/demotalep,Cloud demo talebi var; sayfa netlik ve güven skoru için uygun,Cloud SaaS landing audit,not_contacted
+Galerion,galerion.com.tr,https://www.galerion.com.tr/demo-talep,Demo talep sayfası var; ziyaretçiyi demo kararına taşıyan kanıtlar incelenebilir,Demo dönüşüm artırma,not_contacted
+Aivico,aivico.com.tr,https://www.aivico.com.tr/tr/demo-talep,AI/video konumlu demo sayfası var; mesaj-market fit ve CTA netliği audit edilebilir,AI ürün landing audit,not_contacted
+Havasis,havasis.com.tr,https://havasis.com.tr/demo-talep-formu,Demo formu var; B2B güven ve karar kolaylığı açısından audit fırsatı,Demo form conversion audit,not_contacted
+T-HOS,t-hos.com.tr,https://www.t-hos.com.tr/demo/,Demo sayfası var; teklif/kanıt/CTA üçlüsü hızlı iyileştirme için uygun,Healthcare/B2B demo audit,not_contacted
+IOVA SOFT,iova.com.tr,https://iova.com.tr/demo-talep/,Demo talep sayfası var; hero ve form sürtünmesi için audit fırsatı,Yazılım landing audit,not_contacted
