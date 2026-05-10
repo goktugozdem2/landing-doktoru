@@ -21,6 +21,13 @@ if (sampleMissing.length) {
   console.error('Missing sample page content:', sampleMissing.join(', '));
   process.exit(1);
 }
+const kolayikAudit = fs.readFileSync(new URL('../audits/kolayik-demo.html', import.meta.url), 'utf8');
+const kolayikRequired = ['Kolay İK demo talep', 'Form sürtünmesi', 'İlk 5 uygulanabilir fix'];
+const kolayikMissing = kolayikRequired.filter((text) => !kolayikAudit.includes(text));
+if (kolayikMissing.length) {
+  console.error('Missing Kolay İK audit content:', kolayikMissing.join(', '));
+  process.exit(1);
+}
 const api = fs.readFileSync(new URL('../api/leads.js', import.meta.url), 'utf8');
 const apiRequired = ['No lead destination configured yet', 'TELEGRAM_BOT_TOKEN', 'LEAD_WEBHOOK_URL', 'Next action'];
 const apiMissing = apiRequired.filter((text) => !api.includes(text));
