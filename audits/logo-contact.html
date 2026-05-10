@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logo İletişim Formu — Mini Landing Audit</title>
+  <meta name="description" content="Logo iletişim formu için Landing Doktoru mini audit: B2B yazılım talep formunda sürtünme, CTA ve güven boşlukları." />
+  <style>
+    :root{--bg:#07111f;--card:#0d1b2f;--muted:#9fb2c8;--text:#f4f8ff;--brand:#7cf7c6;--brand2:#7aa7ff;--line:#20324f;--warn:#ffcf70}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 15% -10%,rgba(122,167,255,.24),transparent 28%),var(--bg);color:var(--text);line-height:1.6}.wrap{max-width:1040px;margin:0 auto;padding:28px 20px}a{color:inherit}.nav{display:flex;justify-content:space-between;gap:16px}.logo{font-weight:900}.hero{padding:60px 0 30px}h1{font-size:clamp(36px,6vw,64px);line-height:.98;margin:14px 0;letter-spacing:-.055em}.lead{font-size:20px;color:#c8d7ea;max-width:800px}.pill{display:inline-flex;padding:8px 12px;border:1px solid rgba(124,247,198,.35);border-radius:999px;color:#ccffef;background:rgba(124,247,198,.08);font-weight:850}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:22px}.score{font-size:52px;font-weight:950;letter-spacing:-.06em;background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;color:transparent}.muted{color:var(--muted)}li{margin:9px 0}.btn{display:inline-block;border-radius:16px;padding:15px 20px;font-weight:900;text-decoration:none;margin-top:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#07111f}.warn{border:1px solid rgba(255,207,112,.35);background:rgba(255,207,112,.08)}@media(max-width:800px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="logo" href="../index.html">Landing Doktoru</a>
+    <a class="muted" href="../purchase.html">2.500 TL audit</a>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="pill">Mini audit — Logo iletişim/talep akışı</div>
+      <h1>Logo’nun iletişim formu talep niyetini alıyor; ama “neden şimdi?” gerekçesini formdan önce güçlendirebilir.</h1>
+      <p class="lead">Public HTML incelemesinde iletişim sayfası ve form akışı; ürün/çözüm yoğunluğu, 1 iş günü dönüş vaadi, telefon alanı, ticari ileti izinleri ve opsiyonel mesaj alanı üzerinden değerlendirildi. Amaç: daha fazla nitelikli B2B yazılım talebi.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Teşhis skorları</h2>
+        <p><b>Form sürtünmesi:</b> <span class="score">63</span>/100</p>
+        <p><b>Teklif netliği:</b> 58/100</p>
+        <p><b>Güven/kanıt bağlamı:</b> 72/100</p>
+        <p><b>Sonraki adım netliği:</b> 54/100</p>
+      </div>
+      <div class="card warn">
+        <h2>En büyük fırsat</h2>
+        <p>Form “ihtiyacınızı anlatın” diyor; ama kullanıcı formu doldurmadan önce hangi ürün ailesinin ona uygun olacağını ve talep sonrası ne alacağını daha net görmeli. Özellikle KOBİ/ERP/ön muhasebe gibi farklı segmentler için tek generic form, karar yükünü ziyaretçiye bırakıyor.</p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h2>İlk 5 uygulanabilir fix</h2>
+      <ol>
+        <li><b>Form öncesi segment seçimi:</b> “Ön muhasebe / ERP / e-Dönüşüm / bordro / perakende” gibi 5 hızlı kart ekleyip form mesajını otomatik özelleştirin.</li>
+        <li><b>1 iş günü vaadini CTA’ya taşıyın:</b> Buton metni “1 iş günü içinde çözüm önerisi al” olursa form sonrası beklenti netleşir.</li>
+        <li><b>Telefon zorunluluğu itirazını azaltın:</b> Telefon alanının altına “Sadece talebinizle ilgili dönüş için kullanılır” mikro-kopyası ekleyin.</li>
+        <li><b>Ticari ileti izinlerini ayrıştırın:</b> Talep göndermek için gerekli KVKK onayı ile pazarlama izinleri görsel olarak net ayrılmalı; aksi halde form terkini artırabilir.</li>
+        <li><b>Talep özeti preview’i:</b> Kullanıcı “Size nasıl yardımcı olabiliriz?” seçimini yaptığında sağ tarafta “Logo ekibi size şunlarla dönecek” kutusu gösterin.</li>
+      </ol>
+    </section>
+
+    <section class="grid" style="margin-top:16px">
+      <div class="card">
+        <h2>Hero/CTA rewrite örneği</h2>
+        <p><b>Başlık:</b> İşletmeniz için doğru Logo çözümünü 1 iş günü içinde netleştirelim.</p>
+        <p><b>Alt metin:</b> İhtiyacınızı seçin; ön muhasebe, ERP, e-Dönüşüm veya sektörel çözümler için ilgili ekip size en uygun ürün ve geçiş adımlarıyla döner.</p>
+        <p><b>CTA:</b> Çözüm önerisi al</p>
+      </div>
+      <div class="card">
+        <h2>Landing Doktoru teslimi</h2>
+        <p class="muted">Tam audit’te bu mini teşhis ekran kayıtlı walkthrough, form alanı bazlı friction raporu ve uygulanabilir A/B copy listesine dönüşür.</p>
+        <a class="btn" href="../purchase.html">2.500 TL audit satın alma akışı</a>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap muted">Hazırlayan: Landing Doktoru — public sayfa mini-audit taslağı.</footer>
+</body>
+</html>

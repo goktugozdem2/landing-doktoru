@@ -7,7 +7,8 @@ const required = [
   'Audit talep et',
   'mailto:goktug@datrick.com',
   '/api/leads',
-  'sample.html'
+  'sample.html',
+  'purchase.html'
 ];
 const missing = required.filter((text) => !html.includes(text));
 if (missing.length) {
@@ -19,6 +20,13 @@ const sampleRequired = ['Örnek Audit', 'Hero rewrite örneği', 'öncelikli fix
 const sampleMissing = sampleRequired.filter((text) => !sample.includes(text));
 if (sampleMissing.length) {
   console.error('Missing sample page content:', sampleMissing.join(', '));
+  process.exit(1);
+}
+const purchase = fs.readFileSync(new URL('../purchase.html', import.meta.url), 'utf8');
+const purchaseRequired = ['Satın alma maili aç', '2.500 TL', 'En az 10 uygulanabilir fix', 'mailto:goktug@datrick.com'];
+const purchaseMissing = purchaseRequired.filter((text) => !purchase.includes(text));
+if (purchaseMissing.length) {
+  console.error('Missing purchase page content:', purchaseMissing.join(', '));
   process.exit(1);
 }
 const kolayikAudit = fs.readFileSync(new URL('../audits/kolayik-demo.html', import.meta.url), 'utf8');
@@ -33,6 +41,13 @@ const workcubeRequired = ['Workcube demo workshop', 'CTA ayrımı', 'İlk 5 uygu
 const workcubeMissing = workcubeRequired.filter((text) => !workcubeAudit.includes(text));
 if (workcubeMissing.length) {
   console.error('Missing Workcube audit content:', workcubeMissing.join(', '));
+  process.exit(1);
+}
+const logoAudit = fs.readFileSync(new URL('../audits/logo-contact.html', import.meta.url), 'utf8');
+const logoRequired = ['Logo iletişim/talep akışı', 'Form sürtünmesi', 'İlk 5 uygulanabilir fix', 'segment seçimi'];
+const logoMissing = logoRequired.filter((text) => !logoAudit.includes(text));
+if (logoMissing.length) {
+  console.error('Missing Logo audit content:', logoMissing.join(', '));
   process.exit(1);
 }
 const api = fs.readFileSync(new URL('../api/leads.js', import.meta.url), 'utf8');
