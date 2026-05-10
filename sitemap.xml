@@ -4,4 +4,8 @@
     <loc>https://goktugozdem2.github.io/landing-doktoru/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://goktugozdem2.github.io/landing-doktoru/sample.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

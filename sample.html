@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Örnek Audit — Landing Doktoru</title>
+  <meta name="description" content="Landing Doktoru teslim örneği: dönüşüm skor kartı, hero rewrite ve öncelikli fix listesi." />
+  <style>
+    :root{--bg:#07111f;--card:#0d1b2f;--muted:#9fb2c8;--text:#f4f8ff;--brand:#7cf7c6;--brand2:#7aa7ff;--line:#20324f;--warn:#ffcf70}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 10% -10%,rgba(122,167,255,.22),transparent 26%),var(--bg);color:var(--text);line-height:1.6}.wrap{max-width:980px;margin:0 auto;padding:28px 20px}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{color:var(--brand);text-decoration:none;font-weight:800}.pill{display:inline-flex;padding:8px 12px;border-radius:999px;border:1px solid rgba(124,247,198,.35);background:rgba(124,247,198,.08);color:#c9ffed;font-weight:800}h1{font-size:clamp(36px,6vw,64px);line-height:1;margin:20px 0;letter-spacing:-.055em}.lead{font-size:19px;color:#c7d5e8}.card{border:1px solid rgba(255,255,255,.1);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.035));border-radius:24px;padding:22px;margin:18px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.score{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:12px 0}.score:last-child{border-bottom:0}.muted{color:var(--muted)}.bad{color:#ff9e9e}.good{color:var(--brand)}.warn{color:var(--warn)}.btn{display:inline-block;border-radius:16px;padding:14px 18px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#07111f;text-decoration:none;font-weight:900;margin-top:10px}pre{white-space:pre-wrap;background:#06101f;border:1px solid var(--line);border-radius:16px;padding:16px;color:#dbe7f7}ol,ul{padding-left:20px}@media(max-width:760px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a href="./">← Landing Doktoru</a>
+    <a href="./#basvur">Audit iste</a>
+  </header>
+  <main class="wrap">
+    <span class="pill">Teslim örneği</span>
+    <h1>Bir audit’te ne alacaksın?</h1>
+    <p class="lead">Aşağıdaki örnek hayali bir B2B SaaS landing page üzerinden hazırlanmış teslim formatıdır. Gerçek teslimde senin URL’in için ekran kayıtlı yorum + öncelikli fix listesi + yeniden yazılmış hero/CTA verilir.</p>
+
+    <section class="card">
+      <h2>1) İlk 30 saniye teşhisi</h2>
+      <p class="muted">Ziyaretçi ne sattığını anlıyor ama “neden şimdi demo almalıyım?” sorusunun cevabı ilk ekranda zayıf. CTA görünür; fakat CTA öncesinde ölçülebilir sonuç, sosyal kanıt ve risk azaltıcı vaat eksik.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Dönüşüm skor kartı</h2>
+        <div class="score"><b>Teklif netliği</b><span class="warn">58/100</span></div>
+        <div class="score"><b>CTA sürtünmesi</b><span class="good">72/100</span></div>
+        <div class="score"><b>Güven kanıtı</b><span class="bad">31/100</span></div>
+        <div class="score"><b>Form niyeti</b><span class="warn">55/100</span></div>
+      </div>
+      <div class="card">
+        <h2>En büyük 3 kaçak</h2>
+        <ol>
+          <li>Hero başlığı kategori anlatıyor; iş sonucunu anlatmıyor.</li>
+          <li>Demo istemeden önce “kimler kullanıyor / hangi sonuç çıktı?” kanıtı yok.</li>
+          <li>Form çok erken geliyor; ziyaretçi itirazları kırılmadan lead isteniyor.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2) Hero rewrite örneği</h2>
+      <p class="muted">Önce:</p>
+      <pre>Modern işletmeler için uçtan uca operasyon yönetimi platformu.</pre>
+      <p class="muted">Sonra:</p>
+      <pre>Servis taleplerini tek panelde topla, önceliklendir ve ekiplerine 40% daha hızlı yönlendir.
+
+WhatsApp, form ve e-posta taleplerini kaybetmeden yöneten B2B operasyon paneli. 15 dakikalık demoda kendi sürecin üzerinden gösterelim.</pre>
+    </section>
+
+    <section class="card">
+      <h2>3) Öncelikli ilk 10 fix</h2>
+      <ol>
+        <li>Hero başlığını kategori yerine ölçülebilir iş sonucuna çevir.</li>
+        <li>CTA metnini “Demo Talep Et” yerine “15 dk süreç analizi al” olarak test et.</li>
+        <li>İlk ekran altına 3 somut kullanım senaryosu ekle.</li>
+        <li>Form öncesine “demo sonrası ne olacak?” kutusu koy.</li>
+        <li>Logo/testimonial yoksa “kimin için uygun değil?” bölümüyle güven yarat.</li>
+        <li>Form alanlarını 4 alanla sınırla: ad, iş email, URL, hedef.</li>
+        <li>Mobilde CTA’yı ilk 700px içinde görünür tut.</li>
+        <li>Fiyat yoksa minimum başlangıç/pilot aralığı belirt.</li>
+        <li>SSS’ye veri güvenliği ve kurulum süresi itirazlarını ekle.</li>
+        <li>Teşekkür ekranına takvim/mail yönlendirmesi koy.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>4) Satın alma riski düşük</h2>
+      <p>İlk 10 müşteri için <b>2.500 TL</b>. Uygulanabilir en az 10 fix çıkaramazsam ödeme yok.</p>
+      <a class="btn" href="./#basvur">Benim sayfamı audit et</a>
+    </section>
+  </main>
+</body>
+</html>

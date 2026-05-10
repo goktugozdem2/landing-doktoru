@@ -6,11 +6,19 @@ const required = [
   '2.500 TL',
   'Audit talep et',
   'mailto:goktug@datrick.com',
-  '/api/leads'
+  '/api/leads',
+  'sample.html'
 ];
 const missing = required.filter((text) => !html.includes(text));
 if (missing.length) {
   console.error('Missing required content:', missing.join(', '));
+  process.exit(1);
+}
+const sample = fs.readFileSync(new URL('../sample.html', import.meta.url), 'utf8');
+const sampleRequired = ['Örnek Audit', 'Hero rewrite örneği', 'öncelikli fix listesi', '2.500 TL'];
+const sampleMissing = sampleRequired.filter((text) => !sample.includes(text));
+if (sampleMissing.length) {
+  console.error('Missing sample page content:', sampleMissing.join(', '));
   process.exit(1);
 }
 const api = fs.readFileSync(new URL('../api/leads.js', import.meta.url), 'utf8');
