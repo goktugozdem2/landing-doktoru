@@ -1,0 +1,13 @@
+{
+  "name": "landing-doktoru",
+  "version": "0.1.0",
+  "private": true,
+  "description": "24 saat içinde landing page dönüşüm teşhisi ve uygulanabilir fix listesi.",
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs",
+    "start": "npx serve . -l 4173"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}
