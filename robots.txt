@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://landing-doktoru.vercel.app/sitemap.xml
+Sitemap: https://goktugozdem2.github.io/landing-doktoru/sitemap.xml
