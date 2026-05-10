@@ -28,6 +28,13 @@ if (kolayikMissing.length) {
   console.error('Missing Kolay İK audit content:', kolayikMissing.join(', '));
   process.exit(1);
 }
+const workcubeAudit = fs.readFileSync(new URL('../audits/workcube-demo.html', import.meta.url), 'utf8');
+const workcubeRequired = ['Workcube demo workshop', 'CTA ayrımı', 'İlk 5 uygulanabilir fix'];
+const workcubeMissing = workcubeRequired.filter((text) => !workcubeAudit.includes(text));
+if (workcubeMissing.length) {
+  console.error('Missing Workcube audit content:', workcubeMissing.join(', '));
+  process.exit(1);
+}
 const api = fs.readFileSync(new URL('../api/leads.js', import.meta.url), 'utf8');
 const apiRequired = ['No lead destination configured yet', 'TELEGRAM_BOT_TOKEN', 'LEAD_WEBHOOK_URL', 'Next action'];
 const apiMissing = apiRequired.filter((text) => !api.includes(text));
